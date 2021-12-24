@@ -1,3 +1,3 @@
 ### examples of complex yaml
 
-accessing values and keys from deeply nested dicts and lists.  
+Accessing values and keys from deeply nested dicts and lists.  This ansible quickie is a work in progress.
