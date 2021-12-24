@@ -26,6 +26,7 @@ Quick dynamic ansible inventory using nmap and constructed plugins to discover d
 ### Firewalld (sub your controller ip address)
 ```
 # firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.122.36" port protocol="tcp" port="80" accept'
+# firewall-cmd --reload
 ```
 ### References:
 * https://stackoverflow.com/questions/61826110/dynamic-inventory-groups-from-ansible-plugin-nmap
