@@ -1,0 +1,8 @@
+plugin: nmap
+strict: false
+address: 192.168.122.0/24
+ipv4: yes
+ipv6: no
+ports: no
+groups:
+  proxy: inventory_hostname.startswith('node')

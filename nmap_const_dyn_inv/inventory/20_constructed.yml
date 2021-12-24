@@ -1,0 +1,7 @@
+plugin: constructed
+strict: True
+groups: 
+  proxy: "('node01' in inventory_hostname) or ('node02' in inventory_hostname)"
+  webserver: "('node03' in inventory_hostname) or ('node04' in inventory_hostname)"
+  database: "('node05' in inventory_hostname)"
+
