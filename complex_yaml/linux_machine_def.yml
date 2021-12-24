@@ -1,0 +1,17 @@
+---
+username: root
+host_defs:
+  - name: node1
+    mgmt_ip: 192.168.122.201
+    connections:
+      - { con_name: node1-t1, type: team, ifname: n1-t1, members: [eth1,eth2] }
+      - { con_name: node1-t2, type: team, ifname: n1-t2, members: [eth2,eth3] }
+      - { con_name: node1-t3, type: team, ifname: n1-t3, members: [eth4,eth5] }
+  - name: node2
+    mgmt_ip: 192.168.122.202
+    connections:
+      - { con_name: node2-t1, type: team, ifname: n2-t1, members: [eth1,eth2] }
+      - { con_name: node2-t2, type: team, ifname: n2-t2, members: [eth2,eth3] }
+      - { con_name: node2-t3, type: team, ifname: n2-t3, members: [eth4,eth5] }
+     
+    
