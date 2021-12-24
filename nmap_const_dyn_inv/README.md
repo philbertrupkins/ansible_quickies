@@ -21,11 +21,15 @@ Quick dynamic ansible inventory using nmap and constructed plugins to discover d
 ### Assumptions:
 * All commands executed from this directory so ansible.cfg settings are picked up. 
 * Basic knowldge of Ansible
+* Managed nodes allow port 80 from controller node.  
 
-
+### Firewalld (sub your controller ip address)
+```
+# firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.122.36" port protocol="tcp" port="80" accept'
+```
 ### References:
 * https://stackoverflow.com/questions/61826110/dynamic-inventory-groups-from-ansible-plugin-nmap
-
+* https://nmap.org/docs/discovery.pdf
 
 ### Expected Output:
 ```
