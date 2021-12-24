@@ -32,22 +32,22 @@ $ ansible-inventory --list
                 "ip": "192.168.122.1",
                 "ports": []
             },
-            "trash01": {
+            "node01": {
                 "ip": "192.168.122.145",
                 "ports": []
             },
-            "trash02": {
+            "node02": {
                 "ip": "192.168.122.159",
                 "ports": []
             },
-            "trash03": {
+            "node03": {
                 "ip": "192.168.122.164"
             },
-            "trash04": {
+            "node04": {
                 "ip": "192.168.122.96",
                 "ports": []
             },
-            "trash05": {
+            "node05": {
                 "ip": "192.168.122.68",
                 "ports": []
             }
@@ -63,13 +63,13 @@ $ ansible-inventory --list
     },
     "database": {
         "hosts": [
-            "trash05"
+            "node05"
         ]
     },
     "proxy": {
         "hosts": [
-            "trash01",
-            "trash02"
+            "node01",
+            "node02"
         ]
     },
     "ungrouped": {
@@ -81,7 +81,7 @@ $ ansible-inventory --list
     "webserver": {
         "hosts": [
             "node03",
-            "trash04"
+            "node04"
         ]
     }
 }
