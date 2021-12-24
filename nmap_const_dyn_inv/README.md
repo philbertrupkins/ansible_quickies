@@ -1,6 +1,6 @@
 ### Summary:
 
-Quick dynamic ansible inventory using nmap and constructed plugins to discover devices. Useful for homelab.  Tweak as needed for your environment.
+Quick dynamic ansible inventory using nmap and constructed plugins to discover devices. Useful for homelab.  Tweak as needed for your environment. Both the nmap and constructor plugins are part of the ansible core package.  
 
 ### Important Files:
 * ansible.cfg
@@ -14,7 +14,7 @@ Quick dynamic ansible inventory using nmap and constructed plugins to discover d
 * Gnomes Boxes based controllers/managed VMs running Rockly Linux 8.5
 * All managed nodes on 192.168.122.0/24
 
-### Gnomes Boxes VM Sumamry:
+### Gnomes Boxes VM Summary:
 * controller
 * node{01..05}
 
