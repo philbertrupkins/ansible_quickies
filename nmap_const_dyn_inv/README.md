@@ -24,6 +24,7 @@ Quick dynamic ansible inventory using nmap and constructed plugins to discover d
 * Managed nodes allow port 80 from controller node.  
 
 ### Firewalld (sub your controller ip address)
+Perform the following on each managed node to allow traffic over port 80 from the controller node.  This is required in order for nmap to discover the hosts.  See nmap discovery overview for more info - link in References section below.  
 ```
 # firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.122.36" port protocol="tcp" port="80" accept'
 # firewall-cmd --reload
