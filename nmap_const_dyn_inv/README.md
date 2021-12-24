@@ -1,6 +1,11 @@
 ### Summary:
 
-Quick dynamic ansible inventory using nmap and constructor plugins to discover devices. Useful for homelab.
+Quick dynamic ansible inventory using nmap and constructed plugins to discover devices. Useful for homelab.  Tweak as needed for your environment.
+
+### Important Files:
+* ansible.cfg
+* inventory/10_nmap_inventory.yml
+* inventory/20_nmap_constructed.yml
 
 ### Environment:
 
@@ -16,6 +21,11 @@ Quick dynamic ansible inventory using nmap and constructor plugins to discover d
 ### Assumptions:
 * All commands executed from this directory so ansible.cfg settings are picked up. 
 * Basic knowldge of Ansible
+
+
+### References:
+* https://stackoverflow.com/questions/61826110/dynamic-inventory-groups-from-ansible-plugin-nmap
+
 
 ### Expected Output:
 ```
